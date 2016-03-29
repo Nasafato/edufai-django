@@ -7,7 +7,7 @@ module.exports = {
 	],
 	output: {
 		path: STATIC_URL + '/js/dist',
-		filename: 'image_picker_bundle.js'
+		filename: 'imagepicker_bundle.js'
 	},
 	module: {
 		loaders: [

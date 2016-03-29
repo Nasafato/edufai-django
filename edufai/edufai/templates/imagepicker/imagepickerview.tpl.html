@@ -7,12 +7,15 @@
 {% endblock %}
 
 {% block content %}
-  <h1>Hello World</h1>
-  <div id="imagepicker"></div>
-
+<div id="imagepicker"></div>
 {% endblock %}
 
 {% block footer %}
   {{ block.super }}
-  <script type="text/js" src="{% static 'js/dist/imagepicker_bundle.js' %}"></script>
+<script src="{% static 'js/dist/imagepicker_bundle.js' %}"></script>
+<script type="text/javascript">
+  window.Edufai.init({
+    data: {{ data|safe }}
+  });
+</script>
 {% endblock %}
