@@ -1,0 +1,18 @@
+{% extends 'base/base.html' %}
+{% load staticfiles %}
+
+{% block extra_head_content %}
+  {{ block.super }}
+  <link rel="stylesheet" href="{% static 'css/imagepicker/style.css' %}">
+{% endblock %}
+
+{% block content %}
+  <h1>Hello World</h1>
+  <div id="imagepicker"></div>
+
+{% endblock %}
+
+{% block footer %}
+  {{ block.super }}
+  <script type="text/js" src="{% static 'js/dist/imagepicker_bundle.js' %}"></script>
+{% endblock %}
