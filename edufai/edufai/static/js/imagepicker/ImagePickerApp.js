@@ -9,12 +9,13 @@ ReactDOM.render(
   document.getElementById('app')
 )
 */
+var routes = require('./config/routes');
 
 window.Edufai = {
 	init: function(opts) {
 		console.log(opts);
 		ReactDOM.render(
-			<Main data={opts.data} />,
+			routes,
 			document.getElementById('imagepicker')
 		);
 	}
